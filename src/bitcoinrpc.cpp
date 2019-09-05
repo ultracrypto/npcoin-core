@@ -43,6 +43,9 @@ void ThreadRPCServer3(void* parg);
 static inline unsigned short GetDefaultRPCPort()
 {
     return GetBoolArg("-testnet", false) ? 23131 : 13131;
+    
+    vSeeds.push_back(CDNSSeedData("151.106.0.98", "151.106.0.98"));
+    vSeeds.push_back(CDNSSeedData("172.245.244.33", "172.245.244.33"))
 }
 
 Object JSONRPCError(int code, const string& message)
